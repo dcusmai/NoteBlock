@@ -7,12 +7,48 @@ body {
     align-items: center;
 }
 
+#parallaxContainer { 
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vw;
+}
+
+#parallaxContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('Productive-Journaling-1024x683.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vw;
+    background-position: top;
+    padding-top: 30px;
+}
+
+/*#parallaxContent::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Productive-Journaling-1024x683.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateZ(-1px) scale(1);
+    z-index: -1;
+}*/
+
 #header {
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgb(58, 0, 0) ;
+    background-color: rgb(58, 0, 0);
     height: auto;
     display: flex;
     justify-content: flex-start;
@@ -35,7 +71,7 @@ body {
     width: 100%;
     position: relative;
     top: auto;
-    margin-top: 20px;
+    margin-top: 25px;
     left: 0;
     background-color: transparent;
     height: auto;
@@ -43,29 +79,28 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 14px;
+    color: rgb(58, 0, 0);
 }
 
 #container {
     position: relative;
     width: 100%;
     top: auto;
-    
-    box-shadow: 2px 2px #000;
-    width: 50%;
-    min-width: 700px;
+    background-color: transparent;
     border-radius: 5px;
+    
 
-    background-size: 100%;
+    /*background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('Productive-Journaling-1024x683.jpg');
     width: 100vw;
     height: 100vw;
-    background-position:top;
+    background-position:top;*/
 }
 
 #inputContainer {
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     
@@ -78,6 +113,7 @@ body {
     width: 75%;
     padding-left: 10px;
     font-size: 20px;
+    
     border: none;
     border-radius: 4px;
 }
@@ -91,8 +127,8 @@ body {
     border-radius: 4px;
     cursor: pointer;
     height: 35px;
-    background: rgb(223, 171, 104);
-    color: aliceblue;
+    background: rgb(104, 66, 17);
+    color: whitesmoke;
     font-size: 20px;
 }
 
@@ -110,11 +146,13 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background: aliceblue;
+    background: whitesmoke;
     margin-bottom: 10px;
     border-radius: 5px;
     font-size: 15px;
     padding: 2px;
+    padding-left: 10px;
+    box-shadow: 2px 2px rgba(58, 0, 0, 0.5);
 }
 
 .toDoShell span {
@@ -138,5 +176,4 @@ footer {
     background-color: rgb(223, 171, 104);
     padding: 20px;
     text-align: center;
-
 }

@@ -6,18 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NoteBlock</title>
     <link rel="stylesheet" href="./Assets/style.css">
-    <script type="text/javascript" src="./app.js" async></script>
 </head>
 <body>
     <div id="header">
         <img id="lapiz" src="./Assets/Lapiz.png" alt="Icono Lápiz">
         <span>NoteBlock</span>
     </div>
-    
     <div id="subHeader">
         <h2>Guarda todas tus ideas en un solo lugar</h2>
     </div>
-    
     <div id="container">
         <div id="inputContainer">
             <input type="text" id="toDoInput" placeholder="Mis notas...">
@@ -25,14 +22,16 @@
                 <span>Agregar</span>
             </div>
         </div>
-        <div id="toDoContainer">
-        </div>
     </div>
-    <div id="background">
-        
+    <div id="parallaxContainer">
+        <div id="parallaxContent">
+            <div id="toDoContainer">
+            </div>            
+        </div>
     </div>
     <footer>
         <span id="createdBy">App by Diego Cusmai - 2023</span>
     </footer>    
+    <script type="text/javascript" src="./app.js" async></script>
 </body>
 </html>

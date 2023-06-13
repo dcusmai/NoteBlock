@@ -73,6 +73,12 @@ function completeToDo(event) {
     displayToDos();
 }
 
+window.addEventListener('scroll', function() {
+    const parallaxContent = document.querySelector('#parallaxContent');
+    let offset = window.pageYOffset;
+    parallaxContent.style.backgroundPositionY = offset * -0.7 + 'px'; // Ajusta la velocidad del efecto parallax modificando el factor multiplicativo (0.7 en este caso)
+  });
+
 if (typeof module !== 'undefined') {
     module.exports = {
       toDoItems: toDoItems,
